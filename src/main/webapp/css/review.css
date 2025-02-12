@@ -1,0 +1,61 @@
+/* Base styles for the review container */
+.review-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;  /* Start invisible for animation */
+    transform: translateY(20px);  /* Start lower for slide effect */
+    animation: fadeInUp 0.5s forwards;  /* Animation to fade in and slide up */
+}
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Style for form elements */
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;  /* Transition for border color change */
+}
+
+/* Focus effect for input elements */
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #007BFF;  /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);  /* Add shadow on focus */
+}
+
+/* Style for the submit button */
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;  /* Transition for button effects */
+}
+
+/* Hover effect for the submit button */
+button:hover {
+    background-color: #0056b3;  /* Darken the button on hover */
+    transform: translateY(-2px);  /* Slightly lift the button */
+}
+
+/* Message styling */
+p {
+    margin-top: 10px;
+}

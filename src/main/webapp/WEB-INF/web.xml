@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>WelcomePage.jsp</welcome-file>
+    <welcome-file>Login.jsp</welcome-file>
+    <welcome-file>Register.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  <servlet-name>QuizServlet</servlet-name>
+  <servlet-class>controller.QuizServlet</servlet-class>
+</servlet>
+
+  <servlet-mapping>
+   <servlet-name>QuizServlet</servlet-name>
+   <url-pattern>/projectoo/QuizServlet</url-pattern>
+  </servlet-mapping>
+    <servlet>
+  <servlet-name>Login_Servlet</servlet-name>
+  <servlet-class>controller.Login_Servlet</servlet-class>
+</servlet>
+
+  <servlet-mapping>
+   <servlet-name>Login_Servlet</servlet-name>
+   <url-pattern>/projectoo/Login_Servlet</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
